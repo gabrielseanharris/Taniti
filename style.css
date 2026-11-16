@@ -1,0 +1,522 @@
+*  {
+    font-family: 'Poppins', sans-serif;
+}
+.home {
+    background-image: url("media/island.jpg");
+    min-height: 100px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+.home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(194, 233, 23, 0.6);
+    padding: 10rem;
+    border-radius: 5%;
+    width: 80%;
+    height: 80%;
+    margin: 20px auto;
+
+}
+main {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.main-aside {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+}
+.aside {
+    width: 10%;
+    height: 100%;
+    background-color: rgba(0, 16, 247, 0.5);
+    padding: 20px;
+    border-radius: 5%;
+    margin: 1rem;
+    align-self: flex-start;
+    align-items: center;
+}
+h1{
+    color: #000;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 1rem;
+    margin: 0;
+}
+nav{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin: 0;
+}  
+.nav-bar {
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+}
+.nav-bar, .search-bar {
+    display: flex;
+}
+.search-bar {
+    background-color: lightgreen;
+}
+.home-content h2,
+.home-content p,
+.home-content img {
+    width:70%;
+}
+h1 {
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h2 {
+
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+nav a {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  background-color: inherit;
+  color: black;
+  text-decoration: none;
+  border-right: 1px solid black;
+}
+nav li:first-child a {
+  border-left: 1px solid black;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav li:hover a {
+  background-color: hsl(180, 64%, 45%, 0.5);
+}
+
+nav li:hover {
+  transform: translateY(-8px);
+}
+a:hover {
+    color: inherit;
+}
+a {
+    color: #a025b1;
+}
+nav a:hover,
+nav a:focus-visible {
+    color: #fff;
+}
+:focus-visible {
+    outline: 3px solid #ffbf47;
+    outline-offset: 3px;
+    box-shadow: 0 0 0 2px rgba(35, 231, 9, 0.8);
+}
+nav li {
+    font-size: 1.25rem;
+    flex: 1;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.active {
+    background-color: hsl(180, 64%, 45%, 0.5);
+    color: #fff;
+}
+header,
+h1,
+nav,
+main {
+  margin: 0;
+}
+
+nav {
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.inactive {
+    background-color: lightgreen;
+    color: black;
+}
+.search-bar {
+  background-color: lightgreen;
+  padding: 10px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.site-search-results {
+  width: min(90%, 70rem);
+  margin: 1rem auto;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.96);
+}
+.site-search-results h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+.site-search-results li {
+  margin: 1rem 0;
+}
+.site-search-results p {
+  margin: 0.35rem 0;
+}
+.search-match {
+  outline: 3px solid #28764b;
+  outline-offset: 0.25rem;
+  background-color: rgba(255, 191, 71, 0.2);
+}
+.contact-form {
+  flex: 1 1 24rem;
+  max-width: 38rem;
+  box-sizing: border-box;
+  margin: 1rem;
+  padding: clamp(1.25rem, 4vw, 2.5rem);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.16);
+}
+.faq-intro {
+  flex: 1 1 24rem;
+  box-sizing: border-box;
+  width: auto;
+  height: auto;
+  padding: clamp(1.25rem, 4vw, 2.5rem);
+  background: rgba(255, 255, 255, 0.92);
+}
+.faq-intro h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+.faq-intro p {
+  width: 100%;
+  font-size: 1.1rem;
+  line-height: 1.55;
+}
+.contact-form h2 {
+  margin-top: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+.contact-form > p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+.contact-form form {
+  display: grid;
+  gap: 1rem;
+}
+.form-field {
+  display: grid;
+  gap: 0.4rem;
+}
+.form-field label {
+  font-weight: 700;
+}
+.form-field input,
+.form-field select,
+.form-field textarea {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 2.75rem;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid #52615a;
+  border-radius: 0.35rem;
+  background: #fff;
+  color: #17221c;
+  font: inherit;
+}
+.form-field textarea {
+  resize: vertical;
+}
+.contact-submit {
+  justify-self: start;
+  padding: 0.75rem 1.25rem;
+  border: 0;
+  border-radius: 0.4rem;
+  background: #28764b;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+}
+.contact-submit:disabled {
+  background: #59645e;
+  cursor: not-allowed;
+}
+footer {
+    background-color: hsl(120, 73%, 75%, 0.5);
+    padding: 1rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+h1 img {
+    width: 100px;
+    height: 100px;
+    background-color: white; 
+    padding: 1rem;
+    border-radius: 50%;
+}
+.left {
+    margin-right: 1rem;
+}
+.right {
+    margin-left: 1rem;
+}
+.collage {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  border-radius: 5%;
+  overflow: hidden;
+  gap: 0;
+}
+.hostel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("media/hostel.png");
+  background-size: cover;
+  background-position: top;
+  padding: 12rem;
+}
+.resort {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("media/resort.png");
+  background-size: cover;
+  background-position: center;
+  padding: 12rem;
+}
+.hotel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("media/hotel.png");
+  background-size: cover;
+  background-position: top;
+  padding: 12rem;
+}
+.accomodation-links, .beach h2, .rainforest h2, .volcano h2 {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1rem;
+  text-align: center;
+}
+.intro {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+.city, .nature, .rainforest, .beach, .museum {
+  position: relative;
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+.city img, .nature img, .rainforest img, .beach img, .museum img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.city .card-overlay, .city span, .nature span, .museum span {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.card-overlay p {
+  text-align: center;
+}
+.city:hover, .nature:hover, .museum:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.city .card-overlay:hover, .city span:hover, .nature span:hover, .museum span:hover {
+  color: white;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: stretch;
+  gap: 0;
+}
+.beach, .rainforest,.volcano {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  flex: 1 1 0;
+  min-width: 0;
+  min-height: 35rem;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  height: 10rem;
+  width:auto;
+  color:#000;
+}
+
+@media (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+  .main-aside {
+    flex-direction: column;
+  }
+  .faq-intro,
+  .contact-form {
+    width: auto;
+    max-width: none;
+    align-self: stretch;
+    margin: 0.5rem;
+  }
+}
+.beach {
+  background-image: url("media/beach.png");
+  text-align: center;
+}
+.rainforest {
+  background-image: url("media/rainforest.png");
+}
+.volcano {
+  background-image: url("media/volcano.png"); 
+}
+.restaurant1, .restaurant2, .restaurant3, .restaurant4, .restaurant5, .restaurant6, .restaurant7 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: top;
+  padding: 12rem;
+}
+.restaurant1 {
+  background-image: url("media/restaurant1.jpeg");
+}
+.restaurant2 {
+  background-image: url("media/restaurant2.jpeg");
+}
+.restaurant3 {
+  background-image: url("media/restaurant3.jpeg");
+}
+.restaurant4 {
+  background-image: url("media/restaurant4.jpeg");
+} 
+.restaurant5 {
+  background-image: url("media/restaurant5.jpeg");
+}
+.restaurant6 {
+  background-image: url("media/restaurant6.jpeg");
+}
+.restaurant7 {
+  background-image: url("media/restaurant7.jpeg");
+}
+.dining-collage-top {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  border-radius: 5% 5% 0 0;
+  overflow: hidden;
+}
+.bnb-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-position: top;
+  padding: 12rem;
+}
+.bnb{
+  background-image: url("media/bnb.png");
+  justify-content: center;
+  background-size: cover;
+}
+.stores {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: gray;
+  text-align: center;
+  justify-content: center;
+  font-size: larger;
+}
+.dining-collage-bottom {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  border-radius: 0 0 5% 5%;
+  overflow: hidden;
+}
+.dining-collage-top,
+.dining-collage-bottom {
+  gap: 0;
+}
+.transportation-list {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1rem;
+  overflow: hidden;
+  gap: 0;
+}
+#small-airport {
+  background-image: url("media/small-airport.jpeg");
+}
+#cruise-ship {
+  background-image: url("media/cruise-ship.jpeg");
+}
+#public-buses {
+  background-image: url("media/public-bus.jpeg");
+}
+#private-buses {
+  background-image: url("media/private-bus.jpeg");
+}
+#taxi {
+  background-image: url("media/taxi.jpeg");
+}
+#large-airport {
+  background-image: url("media/large-airport.jpeg");
+}
+#small-airport, #cruise-ship, #public-buses, #private-buses, #taxi {
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+}
+.beach p, .volcano p, .rainforest p {
+  background-color: white;
+  font-size: large;
+}
+.bigger-font {
+  font-size: larger;
+  font-weight: bolder;
+}
